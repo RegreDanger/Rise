@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://w65twgmyblg5"]
+
+[ext_resource type="PackedScene" uid="uid://dco66ubuxx1cm" path="res://scenes/ui/inventory.tscn" id="1_03iei"]
+
+[node name="LevelOne" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Inventory" parent="CanvasLayer" instance=ExtResource("1_03iei")]

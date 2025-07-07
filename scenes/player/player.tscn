@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://defoq3ackhcqt"]
 
-[ext_resource type="Texture2D" uid="uid://bpuyh64xcw4xb" path="res://assets/player/SDMS-s.png" id="1_8afob"]
+[ext_resource type="Texture2D" uid="uid://bpuyh64xcw4xb" path="res://assets/sprites/player/SDMS-s.png" id="1_8afob"]
 
-[node name="player" type="Node2D"]
+[node name="Player" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 
