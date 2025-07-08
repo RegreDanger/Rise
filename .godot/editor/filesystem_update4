@@ -1,1 +1,8 @@
 res://scenes/ui/inventory.tscn
+res://scenes/player/player.tscn
+res://scripts/core/input/input_manager.gd
+res://scripts/player/player_input.gd
+res://scripts/autoload/input/input_manager.gd
+res://data/inputs/input_map_keys.json
+res://scripts/player/player.gd
+res://scripts/ui/inventory.gd

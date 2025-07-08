@@ -1,5 +1,7 @@
+res://scripts/autoload/input
+res://scripts/player
+res://data/inputs
+res://scenes/player
 C:/Users/Acer/Desktop/dev/Godot/Rise/data
 res://scenes/ui
-res://scenes/levels
-res://scenes/player
 res://scenes
