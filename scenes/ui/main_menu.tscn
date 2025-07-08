@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cifrp28242b28"]
 
-[ext_resource type="Script" uid="uid://cuhjw02dg6mya" path="res://scripts/main_menu.gd" id="1_sl1te"]
+[ext_resource type="Script" uid="uid://cuhjw02dg6mya" path="res://scripts/ui/main_menu.gd" id="1_sl1te"]
+
 
 [sub_resource type="LabelSettings" id="LabelSettings_l6cm7"]
 font_size = 71

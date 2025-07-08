@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bpuyh64xcw4xb" path="res://assets/sprites/player/SDMS-s.png" id="1_8afob"]
 
+
 [node name="Player" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
