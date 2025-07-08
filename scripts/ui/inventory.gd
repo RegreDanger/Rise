@@ -21,18 +21,8 @@ func _process(delta: float) -> void:
 			itemList.show()
 
 func add_fake_data():
-	itemList.add_item("23",load("res://assets/sprites/player/SDMS-s.png"))
-	itemList.add_item("13",load("res://assets/sprites/player/SDMS-s.png"))
-	itemList.add_item("2",load("res://assets/sprites/player/SDMS-s.png"))
-	itemList.add_item("3",load("res://assets/sprites/player/SDMS-s.png"))
-	itemList.add_item("22",load("res://assets/sprites/player/SDMS-s.png"))
-	itemList.add_item("1",load("res://assets/sprites/player/SDMS-s.png"))
-	itemList.add_item("1",load("res://assets/sprites/player/SDMS-s.png"))
-	itemList.add_item("1",load("res://assets/sprites/player/SDMS-s.png"))
-	itemList.add_item("1",load("res://assets/sprites/player/SDMS-s.png"))
-	itemList.add_item("1",load("res://assets/sprites/player/SDMS-s.png"))
-	itemList.add_item("1",load("res://assets/sprites/player/SDMS-s.png"))
-	itemList.add_item("1",load("res://assets/sprites/player/SDMS-s.png"))
+	for i in range(120):
+		itemList.add_item(str(i + 1),load("res://assets/sprites/player/SDMS-s.png"))
 	
 	
 	
