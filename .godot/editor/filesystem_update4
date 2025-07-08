@@ -1,4 +1,2 @@
-res://scripts/main_menu.gd
-res://scenes/levels/level_one.tscn
 res://scenes/ui/inventory.tscn
 res://scripts/ui/inventory.gd

@@ -3,8 +3,7 @@ class_name Inventory
 extends Control
 
 #ready 
-@onready var itemList = $ItemList
-
+@onready var itemList = $HBoxContainer/VBoxContainer2/ItemList
 
 func _ready() -> void:
 	#var file = FileAccess.open("res://data/user.dat.txt", FileAccess.READ)
