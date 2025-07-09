@@ -13,6 +13,7 @@ config_version=5
 config/name="rise"
 run/main_scene="uid://cifrp28242b28"
 config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/image="uid://bpuyh64xcw4xb"
 config/icon="res://icon.svg"
 
 [autoload]
@@ -21,6 +22,7 @@ input_manager="*res://scripts/autoload/input/input_manager.gd"
 
 [display]
 
+window/size/mode=2
 window/stretch/mode="viewport"
 
 [file_customization]

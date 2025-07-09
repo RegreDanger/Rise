@@ -1,3 +1,4 @@
 res://scenes/ui/inventory.tscn
 res://scripts/player/player.gd
 res://scenes/player/player.tscn
+res://scenes/ui/main_menu.tscn

@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cifrp28242b28"]
+[gd_scene load_steps=5 format=3 uid="uid://cifrp28242b28"]
 
 [ext_resource type="Script" uid="uid://cuhjw02dg6mya" path="res://scripts/ui/main_menu.gd" id="1_sl1te"]
-
+[ext_resource type="Texture2D" uid="uid://bw11heg8p53nb" path="res://assets/sprites/ui/help.png" id="2_fe2o3"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_l6cm7"]
 font_size = 71
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1g8jr"]
+texture = ExtResource("2_fe2o3")
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -52,6 +55,7 @@ theme_override_constants/separation = 26
 [node name="PlayButton" type="Button" parent="VBoxContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxTexture_1g8jr")
 text = "Play"
 
 [node name="LoadGameButton" type="Button" parent="VBoxContainer/MarginContainer/VBoxContainer"]
