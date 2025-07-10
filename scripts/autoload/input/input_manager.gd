@@ -5,8 +5,10 @@ extends Node
 # global signal
 signal input_action(action_name: String, is_toggle: bool)
 
-var input_keys := {
-	"inventory": "key_i"
+var input_keys: Dictionary = {
+	"inventory": "key_i",
+	"click": "click",
+	"key_space": "key_space"
 }
 
 var visible := false

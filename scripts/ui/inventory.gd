@@ -1,6 +1,6 @@
 class_name Inventory extends Control
 
-#readys
+#ready
 @onready var input_manager_loaded: Input_manager = input_manager
 @onready var inventory: Control = $"."
 @onready var itemList: ItemList = $HBoxContainer/VBoxContainer2/ItemList
