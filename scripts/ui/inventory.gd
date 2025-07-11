@@ -1,13 +1,15 @@
 class_name Inventory extends Control
 
+#managers
+@onready var signal_bus_loaded: signal_bus = signal_bus
+
 #ready
-@onready var input_manager_loaded: Input_manager = input_manager
 @onready var inventory: Control = $"."
 @onready var itemList: ItemList = $HBoxContainer/VBoxContainer2/ItemList
 
 func _ready() -> void:
-	#events 
-	input_manager_loaded.connect("input_action", _show_inventory)
+	#events
+	signal_bus_loaded.connect("input_action", _show_inventory)
 	add_fake_data()
 
 func _show_inventory(action: String, toggle: bool):
