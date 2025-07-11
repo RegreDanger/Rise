@@ -11,14 +11,16 @@ config_version=5
 [application]
 
 config/name="rise"
-run/main_scene="uid://cifrp28242b28"
+run/main_scene="uid://ckq3j8rtjau8i"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/image="uid://bpuyh64xcw4xb"
 config/icon="res://icon.svg"
 
 [autoload]
 
-input_manager="*res://scripts/autoload/input/input_manager.gd"
+input_manager="*res://scripts/autoload/input_manager.gd"
+signal_bus="*res://scripts/autoload/signal_bus.gd"
+scene_manager="*res://scripts/autoload/scene_manager.gd"
 
 [display]
 

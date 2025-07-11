@@ -2,6 +2,9 @@ class_name MainMenu
 
 extends Control
 
+#managers
+@onready var signal_bus_loaded: signal_bus = signal_bus
+
 #scenes 
 const LEVEL_ONE_SCENE = preload("res://scenes/maps/level_one.tscn")
 const INTRODUCTION_SCENE = preload("res://scenes/introduction/introduction.tscn")
@@ -16,8 +19,7 @@ func _ready() -> void:
 	exit_button.connect("pressed",on_exit_pressed)
 
 func on_play_pressed():
-	get_tree().change_scene_to_packed(INTRODUCTION_SCENE)
-	#get_tree().change_scene_to_file("res://scenes/maps/level_one.tscn")
+	signal_bus_loaded.emit_signal("request_ui", INTRODUCTION_SCENE)
 
 func on_exit_pressed():
 	get_tree().quit()

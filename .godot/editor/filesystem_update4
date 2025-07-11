@@ -1,6 +1,6 @@
-res://scenes/introduction/introduction.tscn
-res://scenes/ui/main_menu.tscn
+res://scenes/core/main.tscn
+res://scripts/autoload/input_manager.gd
+res://scripts/autoload/signal_bus.gd
+res://scripts/autoload/scene_manager.gd
 res://scripts/ui/main_menu.gd
-res://scripts/ui/introduction.gd
-res://scripts/autoload/input/input_manager.gd
-res://scripts/ui/inventory.gd
+res://scenes/ui/inventory.tscn
