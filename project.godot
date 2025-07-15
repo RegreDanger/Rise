@@ -13,7 +13,7 @@ config_version=5
 config/name="rise"
 run/main_scene="uid://ckq3j8rtjau8i"
 config/features=PackedStringArray("4.4", "Forward Plus")
-boot_splash/image="uid://bpuyh64xcw4xb"
+boot_splash/image="uid://gkqxrnrjtnii"
 config/icon="res://icon.svg"
 
 [autoload]
