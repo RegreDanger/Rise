@@ -1,6 +1,6 @@
 extends Node
 
-#managers
+#singletons
 @onready var signal_bus_loaded: signal_bus = signal_bus
 
 func _ready() -> void:

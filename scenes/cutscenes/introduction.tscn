@@ -1,14 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bpc6q0i6x0vvw"]
+[gd_scene load_steps=4 format=3 uid="uid://bpc6q0i6x0vvw"]
 
 [ext_resource type="Script" uid="uid://cqbl0mrnruo4a" path="res://scripts/cutscenes/introduction.gd" id="1_1fv16"]
 [ext_resource type="FontFile" uid="uid://imwdhu7ylapg" path="res://assets/fonts/vrc_osd.ttf" id="1_pbq1p"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1fv16"]
 bg_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_lxyvh"]
-font = ExtResource("1_pbq1p")
-font_size = 24
 
 [node name="Introduction" type="Node2D"]
 script = ExtResource("1_1fv16")
@@ -40,8 +36,9 @@ theme_override_constants/margin_right = 24
 [node name="Label" type="Label" parent="CanvasLayer/Control/PanelContainer/MarginContainer"]
 custom_minimum_size = Vector2(0, 300)
 layout_mode = 2
-text = "verga chamo, tu si eres cagon ajdkadjddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
-label_settings = SubResource("LabelSettings_lxyvh")
+theme_override_fonts/font = ExtResource("1_pbq1p")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+visible_characters = 0
+visible_ratio = 0.0

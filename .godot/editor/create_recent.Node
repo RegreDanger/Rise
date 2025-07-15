@@ -1,12 +1,12 @@
+AnimationPlayer
+Label
+RichTextLabel
 Control
 MarginContainer
 PanelContainer
 Container
-Label
 CanvasLayer
 TextureButton
-AnimationPlayer
-RichTextLabel
 VScrollBar
 TextureRect
 Button

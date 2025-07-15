@@ -1,8 +1,9 @@
+res://scripts/utils
+res://assets/fonts
 res://scripts/autoload
 res://scripts/core
 res://scenes/core
 res://scripts/ui
-res://scenes/introduction
 res://assets/sprites/player
 res://scripts/player
 res://scenes/player

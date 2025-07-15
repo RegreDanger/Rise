@@ -1,7 +1,7 @@
+res://scenes/cutscenes/introduction.tscn
+res://scripts/cutscenes/introduction.gd
+res://scripts/utils/procedural_animations.gd
+res://scripts/autoload/scene_manager.gd
+res://scenes/ui/inventory.tscn
 res://scenes/core/main.tscn
 res://scripts/autoload/input_manager.gd
-res://scripts/autoload/signal_bus.gd
-res://scripts/autoload/scene_manager.gd
-res://scripts/ui/main_menu.gd
-res://scenes/ui/inventory.tscn
-res://scripts/ui/inventory.gd

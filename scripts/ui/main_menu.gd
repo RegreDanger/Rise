@@ -7,7 +7,7 @@ extends Control
 
 #scenes 
 const LEVEL_ONE_SCENE = preload("res://scenes/maps/level_one.tscn")
-const INTRODUCTION_SCENE = preload("res://scenes/introduction/introduction.tscn")
+const INTRODUCTION_SCENE = preload("res://scenes/cutscenes/introduction.tscn")
 
 #imports 
 @onready var exit_button: Button = $VBoxContainer/MarginContainer/VBoxContainer/ExitButton
