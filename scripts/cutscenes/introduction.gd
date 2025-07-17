@@ -1,8 +1,12 @@
-class_name Introduction extends Node2D
+class_name Introduction
+extends Node2D
 
 #constans
 const dialog = [
-	"Este es el comienzo de una aventura...","En esta aventura descubrirás muchas cosas, el espacio es vasto, increíble y lleno de conocimientos.","Lamentablemente para tí.","No todos los conocimientos son buenos."
+	"Este es el comienzo de una aventura...",
+	"En esta aventura descubrirás muchas cosas, el espacio es vasto, increíble y lleno de conocimientos.",
+	"Lamentablemente para tí.",
+	"No todos los conocimientos son buenos."
 ]
 
 #singletons
@@ -10,6 +14,9 @@ const dialog = [
 
 #ready 
 @onready var label: Label = $CanvasLayer/Control/PanelContainer/MarginContainer/Label
+
+#constants 
+const LEVEL_ONE_SCENE = preload("res://scenes/maps/level_one.tscn")
 
 #vars 
 var current_line: int = 0
@@ -28,3 +35,6 @@ func next_line(action: String, toggle: bool):
 		if toggle && dialog.size() > current_line:
 			procedural_animations_loaded.typewritter(5, dialog[current_line], label)
 			current_line += 1
+		else:
+			get_tree().change_scene_to_packed(LEVEL_ONE_SCENE)
+			print("jose")

@@ -1,3 +1,4 @@
+class_name Player
 extends CharacterBody2D
 
 var cardinal_direction: Vector2 = Vector2.DOWN

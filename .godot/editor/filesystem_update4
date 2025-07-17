@@ -1,7 +1,7 @@
-res://scenes/ui/inventory.tscn
-res://scripts/player/player.gd
-res://scripts/ui/inventory.gd
 res://scenes/player/player.tscn
+res://scenes/ui/inventory.tscn
 res://scenes/maps/level_one.tscn
-res://scripts/autoload/game_manager.gd
-res://scripts/ui/inventory_slots.gd
+res://scenes/ui/main_menu.tscn
+res://scenes/core/main.tscn
+res://scenes/maps/planet_container.tscn
+res://scripts/maps/level_one.gd
