@@ -1,6 +1,7 @@
+res://assets/sprites/player
+res://assets/sprites/ui
 res://scripts/autoload
 res://
-res://assets/sprites/player
 res://scripts/ui
 res://scripts/utils
 res://assets/fonts

@@ -1,15 +1,174 @@
-[gd_scene load_steps=5 format=3 uid="uid://cifrp28242b28"]
+[gd_scene load_steps=33 format=3 uid="uid://cifrp28242b28"]
 
 [ext_resource type="Script" uid="uid://cuhjw02dg6mya" path="res://scripts/ui/main_menu.gd" id="1_sl1te"]
-[ext_resource type="Texture2D" uid="uid://bw11heg8p53nb" path="res://assets/sprites/ui/help.png" id="2_fe2o3"]
+[ext_resource type="Texture2D" uid="uid://tewfxjatdmhh" path="res://assets/sprites/main.png" id="2_1g8jr"]
+[ext_resource type="FontFile" uid="uid://imwdhu7ylapg" path="res://assets/fonts/vrc_osd.ttf" id="3_1g8jr"]
+[ext_resource type="Texture2D" uid="uid://djhr3p8gs52pe" path="res://assets/sprites/ui/mainButton/Button1.png" id="4_wb0q5"]
+[ext_resource type="Texture2D" uid="uid://clmipogpdfqdw" path="res://assets/sprites/ui/mainButton/Button2.png" id="5_q85j6"]
+[ext_resource type="Texture2D" uid="uid://c7edwn0gdjjqd" path="res://assets/sprites/ui/mainButton/Button3.png" id="6_8g5eo"]
+[ext_resource type="Texture2D" uid="uid://bjk07j40j3aor" path="res://assets/sprites/ui/mainButton/Button4.png" id="7_7suek"]
+[ext_resource type="Texture2D" uid="uid://de3vquvfde8nu" path="res://assets/sprites/ui/mainButton/Button5.png" id="8_otr3d"]
+[ext_resource type="Texture2D" uid="uid://b7073hwal1o1e" path="res://assets/sprites/ui/buttonDelete/ButtonDelete1.png" id="9_8ekit"]
+[ext_resource type="Texture2D" uid="uid://vd01ltyh7ds3" path="res://assets/sprites/ui/buttonDelete/ButtonDelete2.png" id="10_n4uci"]
+[ext_resource type="Texture2D" uid="uid://bwf1xq31l7win" path="res://assets/sprites/ui/buttonDelete/ButtonDelete3.png" id="11_877pj"]
+[ext_resource type="Texture2D" uid="uid://da5iw4jtu2td7" path="res://assets/sprites/ui/buttonDelete/ButtonDelete4.png" id="12_ayp64"]
+[ext_resource type="Texture2D" uid="uid://bdoi8xe2yrrt6" path="res://assets/sprites/ui/buttonDelete/ButtonDelete5.png" id="13_y2j7i"]
+[ext_resource type="Texture2D" uid="uid://gkqxrnrjtnii" path="res://assets/sprites/player/player.png" id="14_n4uci"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_l6cm7"]
+font = ExtResource("3_1g8jr")
 font_size = 71
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1g8jr"]
-texture = ExtResource("2_fe2o3")
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_8ekit"]
+frames = 5
+speed_scale = 10.0
+frame_0/texture = ExtResource("4_wb0q5")
+frame_1/texture = ExtResource("5_q85j6")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("6_8g5eo")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("7_7suek")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("8_otr3d")
+frame_4/duration = 1.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n4uci"]
+texture = SubResource("AnimatedTexture_8ekit")
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_877pj"]
+texture = SubResource("AnimatedTexture_8ekit")
+expand_margin_top = 8.0
+expand_margin_bottom = 8.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_wb0q5"]
+frames = 5
+speed_scale = 10.0
+frame_0/texture = ExtResource("4_wb0q5")
+frame_1/texture = ExtResource("5_q85j6")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("6_8g5eo")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("7_7suek")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("8_otr3d")
+frame_4/duration = 1.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q85j6"]
+texture = SubResource("AnimatedTexture_wb0q5")
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_8g5eo"]
+frames = 5
+speed_scale = 10.0
+frame_0/texture = ExtResource("4_wb0q5")
+frame_1/texture = ExtResource("5_q85j6")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("6_8g5eo")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("7_7suek")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("8_otr3d")
+frame_4/duration = 1.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7suek"]
+texture = SubResource("AnimatedTexture_8g5eo")
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_y1h5l"]
+frames = 5
+speed_scale = 10.0
+frame_0/texture = ExtResource("9_8ekit")
+frame_1/texture = ExtResource("10_n4uci")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("11_877pj")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("12_ayp64")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("13_y2j7i")
+frame_4/duration = 1.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pw24t"]
+texture = SubResource("AnimatedTexture_y1h5l")
+expand_margin_top = 5.0
+expand_margin_bottom = 5.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8ekit"]
+texture = SubResource("AnimatedTexture_y1h5l")
+expand_margin_top = 8.0
+expand_margin_bottom = 8.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n4uci"]
+atlas = ExtResource("14_n4uci")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_877pj"]
+atlas = ExtResource("14_n4uci")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ayp64"]
+atlas = ExtResource("14_n4uci")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y2j7i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n4uci")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_877pj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ayp64")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="Animation" id="Animation_877pj"]
+resource_name = "ship"
+length = 8.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ship:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-47, 700), Vector2(1206, -45.9999)]
+}
+
+[sub_resource type="Animation" id="Animation_ayp64"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ship:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-47, 700)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y2j7i"]
+_data = {
+&"RESET": SubResource("Animation_ayp64"),
+&"ship": SubResource("Animation_877pj")
+}
 
 [node name="MainMenu" type="Control"]
+z_index = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -25,6 +184,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_1g8jr")
+expand_mode = 1
+metadata/_edit_lock_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -35,40 +197,111 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 60
 alignment = 1
+metadata/_edit_lock_ = true
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="Title" type="Label" parent="VBoxContainer"]
+z_index = 2
 layout_mode = 2
 text = "Rise"
 label_settings = SubResource("LabelSettings_l6cm7")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Description" type="Label" parent="VBoxContainer"]
+z_index = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1g8jr")
+theme_override_font_sizes/font_size = 22
+text = "An indie ship game."
+horizontal_alignment = 1
+
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_constants/margin_left = 80
-theme_override_constants/margin_right = 80
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/MarginContainer"]
+z_index = 2
+custom_minimum_size = Vector2(450, 0)
 layout_mode = 2
+size_flags_horizontal = 4
 theme_override_constants/separation = 26
 
 [node name="PlayButton" type="Button" parent="VBoxContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 28
-theme_override_styles/normal = SubResource("StyleBoxTexture_1g8jr")
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("3_1g8jr")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/focus = SubResource("StyleBoxTexture_n4uci")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_n4uci")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_n4uci")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_n4uci")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_n4uci")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_n4uci")
+theme_override_styles/hover = SubResource("StyleBoxTexture_877pj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_n4uci")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_n4uci")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_n4uci")
+theme_override_styles/normal = SubResource("StyleBoxTexture_n4uci")
 text = "Play"
 
 [node name="LoadGameButton" type="Button" parent="VBoxContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1g8jr")
 theme_override_font_sizes/font_size = 28
+theme_override_styles/focus = SubResource("StyleBoxTexture_q85j6")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_q85j6")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_q85j6")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_q85j6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_q85j6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_q85j6")
+theme_override_styles/hover = SubResource("StyleBoxTexture_q85j6")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_q85j6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_q85j6")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_q85j6")
+theme_override_styles/normal = SubResource("StyleBoxTexture_q85j6")
 text = "Load game"
 
 [node name="ConfigurationButton" type="Button" parent="VBoxContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1g8jr")
 theme_override_font_sizes/font_size = 28
+theme_override_styles/focus = SubResource("StyleBoxTexture_7suek")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_7suek")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_7suek")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_7suek")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_7suek")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_7suek")
+theme_override_styles/hover = SubResource("StyleBoxTexture_7suek")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_7suek")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7suek")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_7suek")
+theme_override_styles/normal = SubResource("StyleBoxTexture_7suek")
 text = "Configuration"
 
 [node name="ExitButton" type="Button" parent="VBoxContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("3_1g8jr")
 theme_override_font_sizes/font_size = 28
+theme_override_styles/focus = SubResource("StyleBoxTexture_pw24t")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_pw24t")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_pw24t")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_pw24t")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_pw24t")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_pw24t")
+theme_override_styles/hover = SubResource("StyleBoxTexture_8ekit")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_pw24t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_pw24t")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_pw24t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_pw24t")
 text = "Exit"
+
+[node name="Ship" type="AnimatedSprite2D" parent="."]
+position = Vector2(-47, 700)
+rotation = 0.785398
+scale = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_y2j7i")
+
+[node name="AnimationShip" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_y2j7i")
+}

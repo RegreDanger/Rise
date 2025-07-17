@@ -1,7 +1,9 @@
+res://scenes/maps/level_one.tscn
+res://scripts/maps/level_one.gd
 res://scenes/player/player.tscn
 res://scenes/ui/inventory.tscn
-res://scenes/maps/level_one.tscn
-res://scenes/ui/main_menu.tscn
 res://scenes/core/main.tscn
+res://scripts/utils/procedural_animations.gd
 res://scenes/maps/planet_container.tscn
-res://scripts/maps/level_one.gd
+res://scenes/ui/main_menu.tscn
+res://scripts/ui/main_menu.gd

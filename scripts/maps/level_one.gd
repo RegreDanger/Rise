@@ -6,8 +6,7 @@ extends Node2D
 @onready var options: CanvasLayer = $Options
 
 func _ready() -> void:
-	print("ito")
-	var offset = Vector2(50, 0)
+	var offset = Vector2(100, 0)
 	options.get_node("BuyButton").global_position = planet.get_child(0).global_position + offset 
 	
 	#connect events 

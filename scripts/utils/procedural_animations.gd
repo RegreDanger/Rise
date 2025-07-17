@@ -14,7 +14,7 @@ func typewritter(time: float, text: String, node: Node) -> void:
 func rotate_to(target_angle: float, sprite: Sprite2D) -> void:
 	if tween_rotation and tween_rotation.is_valid():
 		tween_rotation.kill()
-		
+	
 	var current_rot = sprite.rotation
 	var target_rot = deg_to_rad(target_angle)
 	var shortest_rot = wrapf(target_rot - current_rot, -PI, PI) + current_rot
