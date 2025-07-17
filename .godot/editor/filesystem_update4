@@ -1,9 +1,7 @@
-res://scenes/cutscenes/introduction.tscn
-res://scripts/cutscenes/introduction.gd
-res://scripts/utils/procedural_animations.gd
-res://scripts/autoload/scene_manager.gd
 res://scenes/ui/inventory.tscn
-res://scenes/core/main.tscn
-res://scripts/autoload/input_manager.gd
-res://scenes/player/player.tscn
 res://scripts/player/player.gd
+res://scripts/ui/inventory.gd
+res://scenes/player/player.tscn
+res://scenes/maps/level_one.tscn
+res://scripts/autoload/game_manager.gd
+res://scripts/ui/inventory_slots.gd

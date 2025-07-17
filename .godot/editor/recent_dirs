@@ -1,10 +1,11 @@
+res://scripts/autoload
+res://
 res://assets/sprites/player
+res://scripts/ui
 res://scripts/utils
 res://assets/fonts
-res://scripts/autoload
 res://scripts/core
 res://scenes/core
-res://scripts/ui
 res://scripts/player
 res://scenes/player
 C:/Users/Acer/Desktop/dev/Godot/Rise/data
