@@ -27,6 +27,7 @@ texture = ExtResource("2_cym5g")
 
 [node name="Options" type="CanvasLayer" parent="."]
 layer = 2
+visible = false
 follow_viewport_enabled = true
 
 [node name="BuyButton" type="Button" parent="Options"]
